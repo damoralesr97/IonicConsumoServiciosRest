@@ -1,0 +1,7 @@
+{
+  "name": "ServiciosRest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
