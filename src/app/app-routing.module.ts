@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'listar-rol',
+    loadChildren: () => import('./shared/paginas/listar-rol/listar-rol.module').then( m => m.ListarRolPageModule)
   }
 ];
 
