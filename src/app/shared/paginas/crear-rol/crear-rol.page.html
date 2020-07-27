@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear Rol</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-label position="stacked">Codigo<ion-text colot="danger">*</ion-text></ion-label>
+    <ion-input required type="number" [(ngModel)]="rol.codigo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Nombre<ion-text colot="danger">*</ion-text></ion-label>
+    <ion-input required type="text" [(ngModel)]="rol.nombre"></ion-input>
+  </ion-item>
+</ion-list>
+<ion-button expand="block" type="sumbit" (click)="guardar()">Guardar</ion-button>
+</ion-content>

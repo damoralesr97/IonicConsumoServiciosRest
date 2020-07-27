@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'listar-rol',
     loadChildren: () => import('./shared/paginas/listar-rol/listar-rol.module').then( m => m.ListarRolPageModule)
+  },  {
+    path: 'crear-rol',
+    loadChildren: () => import('./shared/paginas/crear-rol/crear-rol.module').then( m => m.CrearRolPageModule)
   }
+
 ];
 
 @NgModule({

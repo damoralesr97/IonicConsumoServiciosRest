@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   public appPages = [
     {
       title: 'Crear Rol',
-      url: '/folder/Inbox',
+      url: 'crear-rol',
       icon: 'briefcase'
     },
     {
