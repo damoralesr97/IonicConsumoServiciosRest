@@ -9,13 +9,10 @@ import { Rol } from '../model/rol';
 })
 export class RestService {
 
-<<<<<<< HEAD
   private GET_ROL_URL:string='http://localhost:8080/proyectoserver/rs/practicaws/listarRol';
   private SEND_ROL_URL:string='http://localhost:8080/proyectoserver/rs/practicaws/crearRol';
-=======
   private SAVE_PACIENTE_URL = 'http://localhost:8080/proyectoserver/rs/practicaws/crearPaciente';
-  private GET_ROL_URL = 'http://localhost:8080/proyectoserver/rs/practicaws/listarRol';
->>>>>>> 9fbc306b4b3e29c3669921bb4d84392c320d575c
+
 
   constructor(private http: HttpClient) { }
 
