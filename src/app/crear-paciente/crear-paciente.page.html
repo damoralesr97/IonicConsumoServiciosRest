@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+        <ion-title>Crear Paciente</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+        <ion-item>
+            <ion-label position="stacked">Cédula</ion-label>
+            <ion-input required type="text" [(ngModel)]="paciente.cedula"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Nombre</ion-label>
+            <ion-input required type="text" [(ngModel)]="paciente.nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Apellido</ion-label>
+            <ion-input required type="text" [(ngModel)]="paciente.apellido"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Email</ion-label>
+            <ion-input required type="email" [(ngModel)]="paciente.email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Clave</ion-label>
+            <ion-input required type="password" [(ngModel)]="paciente.clave"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Fecha Nacimiento</ion-label>
+            <ion-input required type="date" [(ngModel)]="paciente.fechaStr"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Pregunta Secreta</ion-label>
+            <ion-input required type="text" [(ngModel)]="paciente.preguntaSecreta"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Sexo</ion-label>
+            <ion-input required type="text" [(ngModel)]="paciente.sexo"></ion-input>
+        </ion-item>
+
+
+    </ion-list>
+
+    <div class="ion-padding">
+        <ion-button expand="block" type="submit" (click)="guardar()">Guardar</ion-button>
+    </div>
+
+
+</ion-content>
