@@ -17,23 +17,15 @@ export class CrearPacientePage implements OnInit {
   ngOnInit() {
   }
 
-  guardar(){
-    this.restService.savePaciente(this.paciente).subscribe(data => {
-      console.log(data);
-      if (data === 'Ok'){
-        this.toast('Paciente guardado satisfactoriamente');
-      }
-    });
-  }
-
-  async toast(text: string, duration: number = 2000, position?) {
+ async guardar(){
     const toast = await this.toastController.create({
-      message: text,
-      position: position || 'middle',
-      duration: duration
+      message: 'Se guardo el paciente',
+      duration: 2000
     });
-    await toast.present();
+    this.restService.savePaciente(this.paciente).subscribe(data=>{
+      console.log(data);
+    })
+    toast.present();
   }
-
 
 }

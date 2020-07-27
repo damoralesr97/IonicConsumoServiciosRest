@@ -5,7 +5,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'crear-rol',
     pathMatch: 'full'
   },
   {
@@ -23,7 +23,8 @@ const routes: Routes = [
   {
     path: 'crear-paciente',
     loadChildren: () => import('./crear-paciente/crear-paciente.module').then( m => m.CrearPacientePageModule)
-  },  {
+  },
+  {
     path: 'listar-paciente',
     loadChildren: () => import('./shared/paginas/listar-paciente/listar-paciente.module').then( m => m.ListarPacientePageModule)
   }
