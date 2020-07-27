@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'crear-paciente',
     loadChildren: () => import('./crear-paciente/crear-paciente.module').then( m => m.CrearPacientePageModule)
+  },
+  {
+    path: 'listar-rol',
+    loadChildren: () => import('./shared/paginas/listar-rol/listar-rol.module').then( m => m.ListarRolPageModule)
   }
 ];
 

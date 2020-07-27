@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>lista de Roles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list id="lista1">
+
+    <ion-item *ngFor="let roles of rol | async">
+      <ion-label >
+        <h3>Codigo: {{roles.codigo}}</h3>
+        <h6>Rol: {{roles.nombre}}</h6>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
