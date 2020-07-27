@@ -10,6 +10,7 @@ import { Rol } from '../model/rol';
 export class RestService {
 
   private GET_ROL_URL:string='http://localhost:8080/proyectoserver/rs/practicaws/listarRol';
+  private GET_PACIENTE_URL:string='http://localhost:8080/proyectoserver/rs/practicaws/listarPaciente';
   private SEND_ROL_URL:string='http://localhost:8080/proyectoserver/rs/practicaws/crearRol';
   private SAVE_PACIENTE_URL = 'http://localhost:8080/proyectoserver/rs/practicaws/crearPaciente';
 
@@ -23,6 +24,10 @@ export class RestService {
 
   getRol(): Observable<any[]>{
     return this.http.get<Rol[]>(this.GET_ROL_URL);
+  }
+
+  getPaciente(): Observable<any[]>{
+    return this.http.get<Paciente[]>(this.GET_PACIENTE_URL);
   }
 
   sendRol(rol: Rol): Observable<any>{

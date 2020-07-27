@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Listar Pacientes',
-      url: 'crear-paciente',
+      url: 'listar-paciente',
       icon: 'list'
     },
   ];
