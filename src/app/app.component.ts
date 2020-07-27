@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     {
       title: 'Crear Rol',
       url: '/folder/Inbox',
-      icon: 'briefcase'
+      icon: 'clipboard'
     },
     {
       title: 'Listar Roles',
@@ -24,12 +24,12 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Crear Paciente',
-      url: '/folder/Favorites',
+      url: 'crear-paciente',
       icon: 'person'
     },
     {
       title: 'Listar Pacientes',
-      url: '/folder/Archived',
+      url: 'crear-paciente',
       icon: 'list'
     },
   ];
